@@ -106,6 +106,7 @@ body{
   padding: 9px 24px;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 #header .nav__contact:hover {
   box-shadow: 0 0 9px 4px #ccc;

@@ -49,9 +49,7 @@ picture {
 html {
   scroll-behavior: smooth;
 }
-body{
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 .logo {
   cursor: pointer;
   font-weight: bold;

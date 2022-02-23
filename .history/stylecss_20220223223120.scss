@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+$orange-color : #e85d04;
+#header{
+    position: relative;
+    
+}
+#content{
+  width: 100%;
+  background-color: #fff;
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    .section{
+      min-height: 800px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .section__left,
+      .section__right{
+        width: calc(50% - 12px);
+        margin: 12px;
+      }
+      .section__left{
+        padding: 12px;
+        .section__title{
+          font-size: 56px;
+        }
+        .section__desc{
+          font-size: 18px;
+          margin-top: 24px;
+        }
+      }.section__more{
+          background-color: $orange-color;
+          border: none;
+          color: #fff;
+          padding: 12px 24px;
+          border-radius: 24px;
+          font-size: 18px;
+          margin-top: 36px;
+          border: 1px solid transparent;
+          cursor: pointer;
+          &:hover{
+            background-color: #fff;
+            color: $orange-color;
+            border: 1px solid $orange-color;
+          }
+        }
+      .section__right{
+        display: flex;
+        img{
+          width: 40%;
+          object-fit: cover;
+          margin: 12px;
+          border-radius: 6px;
+          &:first-child{
+            transform: translateY(-24px);
+          }
+          &:last-child{
+            transform: translateY(24px);
+          }
+        }
+    }&:last-child{
+      padding-bottom: 200px;
+    }
+    }
+  }
+}

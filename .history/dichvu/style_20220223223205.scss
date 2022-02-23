@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    position: relative;
+    .header__info{
+        width: 420px;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        .header__title{
+            font-size: 56px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .started{
+            padding: 12px 28px;
+            font-size: 24px;
+            color: $orange-color;
+            font-weight: 700;
+            border: 2px solid $orange-color;
+            background-color: transparent;
+            margin-top: 12px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 12px 2px $orange-color;
+                border: none;
+                border-radius: 9px;
+            }
+        }
+    }
+}
